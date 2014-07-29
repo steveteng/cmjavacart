@@ -11,12 +11,8 @@ server = HTTPServer.new(config)
   trap(signal) {server.shutdown}
 }
 
+server.mount_proc '/' do |req, res|
+  res.body = File.read 'index1.html'
+end
+
 server.start
-
-i = 0
-num = 9999999
-
-while $i < $num  do
-        $i +=1
-end
-end
