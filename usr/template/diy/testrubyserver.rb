@@ -12,3 +12,11 @@ server = HTTPServer.new(config)
 }
 
 server.start
+
+i = 0
+num = 9999999
+
+while $i < $num  do
+        $i +=1
+end
+end
