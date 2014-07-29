@@ -29,7 +29,7 @@ Subscribes:
     Required: false
 Scaling:
   Min: 1
-  Max: 1
+  Max: 10
 Group-Overrides:
 - components:
   - web-proxy
