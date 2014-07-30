@@ -29,7 +29,7 @@ Subscribes:
     Required: false
 Scaling:
   Min: 1
-  Max: 10
+  Max: -1
 Group-Overrides:
 - components:
   - web-proxy
@@ -52,4 +52,4 @@ Endpoints:
     Backend: ''
     Options:
       health: true
-Source-Url: https://github.com/stephencheng/cmjavacart.git
+Source-Url: https://github.com/steveteng/javacartridge.git
