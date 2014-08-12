@@ -3,6 +3,4 @@
 # script. The application will work only if it binds to
 # $OPENSHIFT_DIY_IP:8080
 
-$OPENSHIFT_REPO_DIR/gradlew build
-nohup java -jar $OPENSHIFT_REPO_DIR/build/libs/springseed-devbuild.jar
---server.port=8080 > OPENSHIFT_REPO_DIR/openshift.log &
+nohup java -jar $OPENSHIFT_REPO_DIR/diy/springseed-devbuild.jar --server.address=$OPENSHIFT_DIY_IP --server.port=8080 |& /usr/bin/logshifter -tag diy &
